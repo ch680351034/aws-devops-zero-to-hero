@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-# Stop the running container (if any)
-#container_id=$(docker ps -q)
+CONTAINER_ID=docker ps | grep python-app | awk '{print$1}'
 
-docker rm -f 50cd19ef672e
+# Delete container by ID  
+docker rm -f $CONTAINER_ID
