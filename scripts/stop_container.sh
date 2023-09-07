@@ -1,4 +1,5 @@
 #!/bin/bash
 set -e
-echo "hello................."
-# Delete container by ID  
+
+# Stop the running container (if any)
+echo "Hi"
